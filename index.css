@@ -29,7 +29,8 @@ body{
     gap: 32px;
     font-size: 16px;
     grid-template-rows: 80px 5fr 90px;
-    background-color: var(--white-color);      
+    background-color: var(--white-color);
+    height: 100vh;      
 }
 
 hr{
@@ -69,12 +70,14 @@ hr{
     display: flex;
     gap: 62px;
     align-items: center;
+
     
 }
 
 .header-icons svg{
     cursor: pointer;
-    
+    fill: var(--white-color);
+    transition: fill 0.3s linear;
 }
 .header-icons svg:nth-child(1):hover{
     fill: green;
